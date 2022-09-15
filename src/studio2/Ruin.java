@@ -14,19 +14,25 @@ public class Ruin {
 		double winChance = in.nextDouble();
 		System.out.println("Win Limit:");
 		double winLimit = in.nextDouble();
-		
-		while (startAmount < winLimit &&  startAmount > 0 )
-		{ 
-			Boolean winLose = Math.random() < winChance ;
+		System.out.println("Simulations:");
+		int totalSimulations = in.nextInt();
+		int Simulation = 0;
+		int games = 0;
+		(while simulationNumber < totalSimulations
+			{	(while (startAmount < winLimit &&  startAmount > 0 )
+				{
+				Boolean winLose = Math.random() < winChance ;
 			
-			if (winLose == true)
-					{ startAmount++ ; }
+				if (winLose)
+				{ startAmount++ ; }
 					
-					else 
-						{ startAmount-- ;}
-			System.out.println(startAmount);
-			
-		}
-	}
+				else 
+					{ startAmount-- ;}
+				games = games + 1;
+				System.out.println(startAmount);
+				}
+				Simulation = Simulation +1;
+				System.out.println("Simulation Day: " + Simulation + XYZ + ZYX)
+			}
 
 }
